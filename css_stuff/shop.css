@@ -1,7 +1,57 @@
+h1 {
+  font-family: 'Henny Penny';
+  font-size: 50px;
+  color: #FFF;
+  text-align: center;
+  }
 body {
-  color: #FFFFFF !important;
+  background-image: url('../images/darkcheckered.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #FFF;
+  font-family: 'Lucida Console';
+  font-size: 20px;
 }
 
-h1 {
-  color: #FFFFFF !important;
+.bg-dark-grey {
+  background-color: #303030;
+}
+
+nav {
+  height: 200px;
+}
+
+.logo {
+  background-image: url("../images/icons/favicon.png");
+  background-size: cover;
+  height: 125px;
+  width: 125px;
+  align-items: top left;
+  /* float: right; */
+}
+
+#shop_nav {
+  /* border: solid; */
+  /* border-radius: 10px; */
+  height: 40vh;
+  width: 120vw;
+  display: grid;
+  align-items: center;
+  vertical-align: center;
+  grid-template-columns: 120px;
+  grid-template-rows: 40px 40px 40px 40px;
+  grid-gap: 10px;
+  align-content: left;
+  justify-content: left;
+
+}
+
+.shop_square {
+  /* box-sizing: border-box; */
+  background-color: rgb(139, 139, 139);
+}
+
+.shop_square:hover {
+  transform: scale(1.02);
 }

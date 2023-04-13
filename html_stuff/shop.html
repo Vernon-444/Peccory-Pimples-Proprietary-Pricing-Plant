@@ -4,41 +4,28 @@
     <head>
       <meta charset="utf-8" />
 
+      <!-- Set icon to the cute piggy -->
       <link rel="icon" href="../images/icons/favicon.png">
-      <link rel="stylesheet" href="../css_stuff/shop.css">
 
+      <!-- Get that boostrap & jquery -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-      <style>
-        body {
-          background-image: url('../images/darkcheckered.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 100% 100%;
-        }
-      </style>
+      <!-- Set stylesheet for the page just behind bootstrap -->
+      <link rel="stylesheet" href="../css_stuff/shop.css">
 
-
+      <!-- Getting the Henny Penny google font -->
       <link href='https://fonts.googleapis.com/css?family=Henny Penny' rel='stylesheet'>
-      <style>
-        h1 {
-        font-family: 'Henny Penny';font-size: 22px;
-        }
-        body {
-          font-family: 'Lucida Console';
-        }
-      </style>
+
+      <title>Shoppin Page</title>
 
     </head>
 
-    <h1>Shop Page</h1>
-    <p>Finally got that font working!!!</p>
-    <p>$12345678.90</p>
-
     <body>
+
+      <!-- Make sure jquery loads properly -->
       <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
       <script type="application/javascript">
         if (typeof jQuery === 'undefined') {
@@ -48,6 +35,41 @@
           console.log('jQuery has been loaded correctly');
         }
       </script>
+
+    <!-- Adding content -->
+    <nav id="navbar" class="bg-dark">
+      <div class="heading">
+        <h1 class="">Peccory Pimples Proprietary Pricing Plant</h1>
+      </div>
+      <div class="logo"></div>
+    </nav>
+
+    <main class="Filter_Buttons">
+      <style>
+        .Filter_Buttons {
+          font-family: 'Henny Penny';
+        }
+      </style>
+      </style>
+      <div id="hero">
+      </div>
+      <div id="shop_nav" class="bg-dark h-10">
+        <div class="shop_square one">
+          <div class="shop_content">Wondez</div>
+        </div>
+        <div class="shop_square two">
+          <div class="shop_content">Vestments</div>
+        </div>
+        <div class="shop_square three">
+          <div class="shop_content">Books</div>
+        </div>
+        <div class="shop_square four">
+          <div class="shop_content">Minions</div>
+        </div>
+      </div>
+    </main>
+
+
     </body>
 
 </html>
