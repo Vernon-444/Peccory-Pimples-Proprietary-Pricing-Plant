@@ -35,7 +35,11 @@ nav {
   top: 2%;
 }
 
-
+.subtitle {
+  font-size: medium;
+  text-align: center;
+  font-weight:lighter;
+}
 
 nav .heading {
   width: 50%;
