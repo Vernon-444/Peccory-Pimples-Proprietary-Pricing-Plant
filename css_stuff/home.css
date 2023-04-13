@@ -2,8 +2,12 @@
   color: #f0f0f0;
 }
 
+/* Added stretching to background to fill regardless of monitor size. Will expand for larger, but will not shrink for smaller*/
 body {
   background-image: url("../images/darkcheckered.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .bg-dark-grey {
