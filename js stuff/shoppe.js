@@ -1,17 +1,17 @@
 //adding the list of shop items as a js dict
-function shoppeItem(obj, name, type, price, level, rating, releaseDate){
+function shoppeItem(name, type, price, level, rating, releaseDate){
+  let obj = {}
   obj.name = name;
   obj.type = type;
   obj.price = price;
   obj.level = level;
   obj.rating = rating;
   obj.releaseDate = releaseDate;
-  return obj
+  return obj;
 }
 
 //books
-let ComedyGold = shoppeItem({}, 'Comedy Gold', 'book', '$419.99', 'Novice', '5', '1999');
-console.log(ComedyGold)
+let ComedyGold = shoppeItem('Comedy Gold', 'book', '$419.99', 'Novice', '5', '1999');
 let EnchantedBook = shoppeItem('Enchanted Book', 'book', '$31.99', 'Intermediate', '3', '1999');
 let Forbidden = shoppeItem('[REDACTED]', 'book', '$899.99', 'Expert', '0', '69');
 let diy = shoppeItem('Do-It-Yourself', 'book', '$229.99', 'Intermediate', '5', '2003');
