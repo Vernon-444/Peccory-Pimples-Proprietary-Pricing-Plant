@@ -2,13 +2,6 @@
   color: #f0f0f0;
 }
 
-h1 {
-  text-align: center;
-  font-size: xx-large;
-  text-shadow: 1px 1px black;
-  margin: 0;
-}
-
 /* Added stretching to background to fill regardless of monitor size. Will expand for larger, but will not shrink for smaller*/
 body {
   background-image: url("../images/darkcheckered.jpg");
@@ -17,12 +10,18 @@ body {
   background-size: 100% 100%;
 }
 
-.bg-dark-grey {
-  background-color: #303030;
+/* header styling========================== */
+
+header {
+  padding: 1.5rem;
 }
 
-nav {
-  height: 200px;
+header h1 {
+  text-align: center;
+  font-size: xx-large;
+  text-shadow: 1px 1px black;
+  width: 75%;
+  margin: auto;
 }
 
 .logo {
@@ -35,16 +34,32 @@ nav {
   top: 2%;
 }
 
-.subtitle {
-  font-size: medium;
-  text-align: center;
-  font-weight:lighter;
+.logo:hover {
+  transform: scale(1.03);
 }
 
-nav .heading {
-  width: 50%;
-  margin: 0 !important;
+@media (max-width: 400px) {
+  header h1 {
+    width: 100%;
+    margin: 0;
+  }
+  .logo {
+    position: static;
+    margin: auto;
+  }
 }
+
+/* main styling==================== */
+
+.subtitle {
+  font-size: large;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  min-width: 300px;
+  padding: 2rem;
+}
+
 
 #shop_nav {
   height: 50vh;
@@ -53,15 +68,16 @@ nav .heading {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 0 auto;
+  min-width: 300px;
 }
 
 .shop_square {
-  /* box-sizing: border-box; */
   background-color: grey;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .shop_square:hover {
@@ -70,7 +86,7 @@ nav .heading {
 
 .one {
   border: 2px solid black;
-  border-radius: 10px 0 0 0;
+  border-radius: 20px 0 0 0;
   grid-column-start: 1;
   grid-row-start: 1;
   background-image: url('../images/shop/wondees.jpg');
@@ -82,7 +98,7 @@ nav .heading {
 .two {
   margin-left: -2px;
   border: 2px solid black;
-  border-radius: 0 10px 0 0;
+  border-radius: 0 20px 0 0;
   grid-column-start: 2;
   grid-row-start: 1;
   background-image: url('../images/shop/books.jpg');
@@ -94,7 +110,7 @@ nav .heading {
 .three {
   margin: -2px 0 0 0;
   border: 2px solid black;
-  border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 20px;
   grid-column-start: 1;
   grid-row-start: 2;
   background-image: url('../images/shop/creatures.jpg');
@@ -106,7 +122,7 @@ nav .heading {
 .four {
   margin: -2px 0 0 -2px;
   border: 2px solid black;
-  border-radius: 0 0 10px 0;
+  border-radius: 0 0 20px 0;
   grid-column-start: 2;
   grid-row-start: 2;
   background-image: url('../images/shop/merlin.jpg');
@@ -119,3 +135,44 @@ nav .heading {
   text-shadow: 1px 1px black;
 }
 
+.shop_all {
+  background-image: url('../images/shop/hogwarts.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 10vh;
+  min-width: 180px;
+  margin: 1.5rem auto;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.shop_all:hover {
+  transform: scale(1.01);
+}
+
+.shop_all a {
+  text-decoration: none;
+  font-family: 'Henny Penny';
+  font-size: x-large;
+  text-shadow: 1px 1px black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: -10%;
+}
+
+footer p {
+  text-align: center;
+  margin: 1.5rem;
+  white-space: nowrap;
+  font-size: medium;
+}

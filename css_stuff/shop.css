@@ -1,40 +1,29 @@
-* {
-  color: #f0f0f0;
-}
-
 h1 {
   font-family: 'Henny Penny';
+  font-size: 50px;
+  color: #FFF;
   text-align: center;
-  font-size: xx-large;
-  text-shadow: 1px 1px 2px black;
-  margin: 20;
-  height: 60px;
-  vertical-align: center;
-  align-items: center;
-}
-
-h2 {
-  font-family: 'Henny Penny';
-  text-align: center;
-  font-size: xx-large;
-  text-shadow: 1px 1px 2px black;
-  vertical-align: center;
-}
-
-/* Added stretching to background to fill regardless of monitor size. Will expand for larger, but will not shrink for smaller*/
+  }
 body {
-  background-image: url("../images/darkcheckered.jpg");
+  background-image: url('../images/darkcheckered.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  color: #FFF;
+  font-family: 'Bentham';
+  font-size: 20px;
 }
 
-.bg-dark-grey {
-  background-color: #303030;
+header {
+  padding: 1.5rem;
 }
 
-nav {
-  height: 100px;
+header h1 {
+  text-align: center;
+  font-size: xx-large;
+  text-shadow: 1px 1px black;
+  width: 75%;
+  margin: auto;
 }
 
 .logo {
@@ -43,56 +32,71 @@ nav {
   height: 75px;
   width: 75px;
   position: absolute;
-  top: 0.5em;
-  left: 3%;
+  left: 2%;
+  top: 2%;
+}
+
+.logo:hover {
+  transform: scale(1.03);
 }
 
 .subtitle {
-  font-size: medium;
+  font-size: large;
   text-align: center;
-  font-weight:lighter;
-  font-family: 'Bentham';
-}
-
-nav .heading {
   width: 50%;
-  vertical-align: center;
-  align-items: center;
-  align-content: center;
+  margin: 0 auto;
+  min-width: 300px;
+  padding: 2rem;
 }
 
-#filter_nav {
-  height: 300px;
-  width: 200px;
+@media (max-width: 400px) {
+  header h1 {
+    width: 100%;
+    margin: 0;
+  }
+  .logo {
+    position: static;
+    margin: auto;
+  }
+}
+
+#shop_nav {
+  /* border: solid; */
+  /* border-radius: 10px; */
+  height: 40vh;
+  width: 120vw;
   display: grid;
   align-items: center;
   vertical-align: center;
-  grid-template-columns: 150px;
-  grid-template-rows: 60px 60px 60px 60px 60px;
-  grid-gap: 0px;
+  grid-template-columns: 120px;
+  grid-template-rows: 40px 40px 40px 40px;
+  grid-gap: 10px;
   align-content: left;
   justify-content: left;
-  font-size: 16px;
 }
 
-.filter_square {
+.shop_square {
   /* box-sizing: border-box; */
-  background-color: rgb(139, 78, 78);
-  text-decoration: none;
-  display: fill;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(79, 78, 78);
+  border-radius: 12px;
   text-align: center;
-  height: 50%;
-  border-radius: 20px;
 }
 
-.filter_content {
-  text-shadow: 1px 1px black;
-  height: 30px;
+.shop_square:hover {
+  transform: scale(1.05);
+  background-color: #410000;
 }
 
-.filter_square:hover {
-  transform: scale(1.08);
-  background-color: #bb0606;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: -10%;
+}
+
+footer p {
+  text-align: center;
+  margin: 1.5rem;
+  white-space: nowrap;
+  font-size: medium;
 }
