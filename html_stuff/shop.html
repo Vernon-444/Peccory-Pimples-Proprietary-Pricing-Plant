@@ -9,13 +9,16 @@
 
       <!-- Get that boostrap & jquery -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
       <!-- adding js file sources -->
-      <script type="module" src="../js stuff/shoppe.js"></script>
-      <script type="module" src="../js stuff/shopworks.js"></script>
+      <script src="../js stuff/shoppe.js"></script>
+      <script src="../js stuff/shopworks.js"></script>
+      <script>
+        function clearAll() {
+          $('input:checked').prop('checked', false);
+        }
+      </script>
 
       <!-- Set stylesheet for the page just behind bootstrap -->
       <link rel="stylesheet" href="../css_stuff/shop.css">
@@ -74,12 +77,12 @@
       </label>
 
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" onclick="clearAll()">
         <span class="slider five">Clear All</span>
       </label>
     </div>
     <footer>
-      <p>YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY</p>
+      <p>YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY YOU WANT TO BUY</p>
     </footer>
 
     </body>

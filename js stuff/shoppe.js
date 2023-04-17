@@ -1,5 +1,5 @@
 //adding the list of shop items as a js dict
-function shoppeItem(name, type, price, level, rating, releaseDate){
+function shoppeItem(name, type, price, level, rating, releaseDate, description='', image=''){
   let obj = {}
   obj.name = name;
   obj.type = type;
@@ -51,7 +51,7 @@ let glock = shoppeItem('Glock', 'wonde', '$449.99', 'Intermediate', '4', '1776',
 
 
 //item dict
-let shoppeItems = {
+const shoppeItems = {
   book: [
     {ComedyGold},
     {EnchantedBook},
@@ -93,8 +93,3 @@ let shoppeItems = {
     {glock},
   ]
 }
-
-console.log(shoppeItems);
-
-// module.exports = shoppeItems;
-export {shoppeItems}
