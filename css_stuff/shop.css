@@ -1,17 +1,32 @@
+* {
+  color: #f0f0f0;
+}
+
 h1 {
   font-family: 'Henny Penny';
-  font-size: 50px;
-  color: #FFF;
   text-align: center;
-  }
+  font-size: xx-large;
+  text-shadow: 1px 1px 2px black;
+  margin: 20;
+  height: 60px;
+  vertical-align: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Henny Penny';
+  text-align: center;
+  font-size: xx-large;
+  text-shadow: 1px 1px 2px black;
+  vertical-align: center;
+}
+
+/* Added stretching to background to fill regardless of monitor size. Will expand for larger, but will not shrink for smaller*/
 body {
-  background-image: url('../images/darkcheckered.jpg');
+  background-image: url("../images/darkcheckered.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color: #FFF;
-  font-family: 'Bentham';
-  font-size: 20px;
 }
 
 .bg-dark-grey {
@@ -19,39 +34,65 @@ body {
 }
 
 nav {
-  height: 200px;
+  height: 100px;
 }
 
 .logo {
-  background-image: url("../images/icons/favicon.png");
+  background-image: url("../images/icons/piggy_wizard2.png");
   background-size: cover;
-  height: 125px;
-  width: 125px;
-  align-items: top left;
-  /* float: right; */
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  top: 0.5em;
+  left: 3%;
 }
 
-#shop_nav {
-  /* border: solid; */
-  /* border-radius: 10px; */
-  height: 40vh;
-  width: 120vw;
+.subtitle {
+  font-size: medium;
+  text-align: center;
+  font-weight:lighter;
+  font-family: 'Bentham';
+}
+
+nav .heading {
+  width: 50%;
+  vertical-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+#filter_nav {
+  height: 300px;
+  width: 200px;
   display: grid;
   align-items: center;
   vertical-align: center;
-  grid-template-columns: 120px;
-  grid-template-rows: 40px 40px 40px 40px;
-  grid-gap: 10px;
+  grid-template-columns: 150px;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-gap: 0px;
   align-content: left;
   justify-content: left;
-
+  font-size: 16px;
 }
 
-.shop_square {
+.filter_square {
   /* box-sizing: border-box; */
-  background-color: rgb(139, 139, 139);
+  background-color: rgb(139, 78, 78);
+  text-decoration: none;
+  display: fill;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+  border-radius: 20px;
 }
 
-.shop_square:hover {
-  transform: scale(1.02);
+.filter_content {
+  text-shadow: 1px 1px black;
+  height: 30px;
+}
+
+.filter_square:hover {
+  transform: scale(1.08);
+  background-color: #bb0606;
 }
