@@ -22,7 +22,6 @@ header h1 {
   text-shadow: 1px 1px black;
   width: 75%;
   margin: auto;
-  font-weight: 500;
 }
 
 .logo {
@@ -39,7 +38,7 @@ header h1 {
   transform: scale(1.03);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   header h1 {
     width: 100%;
     margin: 0;
@@ -47,6 +46,7 @@ header h1 {
   .logo {
     position: static;
     margin: auto;
+    display: block;
   }
 }
 
@@ -151,13 +151,18 @@ header h1 {
   align-items: center;
   border: 2px solid black;
   text-align: center;
+  text-decoration: none;
+  font-family: 'Henny Penny';
+  font-size: x-large;
+  text-shadow: 1px 1px black;
+  margin-bottom: 10vh;
 }
 
 .shop_all:hover {
   transform: scale(1.03);
 }
 
-.shop_all a {
+.shop_all p {
   text-decoration: none;
   font-family: 'Henny Penny';
   font-size: x-large;
@@ -177,3 +182,5 @@ footer p {
   white-space: nowrap;
   font-size: medium;
 }
+
+
