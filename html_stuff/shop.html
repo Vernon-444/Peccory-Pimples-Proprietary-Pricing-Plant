@@ -54,6 +54,39 @@
     <header id="navbar">
       <h1>Peccory Pimples Proprietary Pricing Plant</h1>
       <a class="logo" title="Home Page" href="home.html"></a>
+
+      <!-- #region checkout button and form ---------------------------------------->
+      <button class="cart" onclick="openForm()" title="Checkout"></button>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Shopping Cart</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+          <button class="sign-in" onclick="openForm()" title="Sign In">Sign In</button>
+        </form>
+        <!-- scripts to open and close form -->
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+      </div>
+
+      <!-- #endregion -->
+
     </header>
     <p class="subtitle">Your one stop shop for all your VVizarding needs</p>
 
@@ -61,7 +94,7 @@
 
     <!-- #region adding filter buttons -->
     <div class="grid">
-      <p class="filters_header">Filter</p>
+      <p class="filters_header">Filterz</p>
       <!-- Rounded switch -->
       <label class="switch">
         <input type="checkbox" id="wondez">
@@ -87,6 +120,7 @@
         <input type="checkbox">
         <span class="slider five">Clear All</span>
       </label>
+      <div><img src="../images/icons/wizy.jpg" class="filter-img"></div>
     <!-- #endregion -->
 
     <!-- #region Shop Container-->
@@ -94,7 +128,7 @@
       <div class="item-container">
         <div class="item-img-container">
           <img  class='item-img' src="../images/minions/teddy.jpg" id="item image 1">
-          <img class='cart-icon' src="../images/icons/cart_icon.jpg" href="shoppingcart.html" id="item cart icon 1">
+          <img class='cart-icon' src="../images/icons/cart_icon.jpg" href="shoppingcart.html" id="item cart icon 1" title="add to cart">
         </div>
         <div class="item-name">The Goodest Boi (Teddy)</div>
         <div class="item-price">$2345348.83</div>
@@ -212,7 +246,7 @@
         <div class="item-name">The Goodest Boi (Teddy)</div>
         <div class="item-price">$2345348.83</div>
         <div class="item-description">lorem ipsum somehting something bullcrap channing tatum Teddy is the bestest boy and I love him and give him lots of treats.</div>
-      
+
 
 
     </div>
