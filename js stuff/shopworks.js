@@ -11,19 +11,19 @@ $(document).ready(function() {
     $(`#${filter}`).prop('checked', true);
   }
 
-  cart = loadCart();
-
   addListeners();
   filterItems();
+
+  let cart = loadCart();
 })
 
 function addListeners() {
   // run display items anytime a filters is selected or unselected, slices to not select the clear all button
-  $('input').slice(0, 4).click(function() {
+  $('.switch input').slice(0, 4).click(function() {
     filterItems();
   })
   // add clear all and display items to clear all button
-  $('input').eq(4).click(function() {
+  $('.switch input').eq(4).click(function() {
     clearAll();
     filterItems();
   })
@@ -53,8 +53,10 @@ function filterItems() {
   }
   // perhaps adding a sort function here, like sort by item.rating for item of filteredItems???
   console.log(filteredItems);
+
+  // empty the store front and re add everything selected
+  $('.store-container').empty();
   for (shopItem of filteredItems) {
-    console.log(shopItem)
     addItem(shopItem);
   }
 }
