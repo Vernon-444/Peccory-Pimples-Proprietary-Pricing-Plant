@@ -1,3 +1,10 @@
+/* Shop.html style sheet */
+
+
+/* #region Header, Title, Subtitle */
+html {
+  height: 94%;
+}
 h1 {
   font-family: 'Henny Penny';
   font-size: 50px;
@@ -12,6 +19,7 @@ body {
   color: #FFF;
   font-family: 'Bentham';
   font-size: 20px;
+  height: 94%;
 }
 
 header {
@@ -24,20 +32,6 @@ header h1 {
   text-shadow: 1px 1px black;
   width: 75%;
   margin: auto;
-}
-
-.logo {
-  background-image: url("../images/icons/piggy_wizard2.png");
-  background-size: cover;
-  height: 75px;
-  width: 75px;
-  position: absolute;
-  left: 2%;
-  top: 2%;
-}
-
-.logo:hover {
-  transform: scale(1.03);
 }
 
 .subtitle {
@@ -60,7 +54,26 @@ header h1 {
     display: block;
   }
 }
+/* #endregion */
 
+/* #region logo button */
+.logo {
+  background-image: url("../images/icons/piggy_wizard2.png");
+  background-size: cover;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+/* #endregion */
+
+/* #region filters menu and buttons */
 .filters_header {
   font-family: 'Bentham';
   font-size: 25px;
@@ -111,6 +124,21 @@ input:checked + .slider {
   background-color: #ff0000;
 }
 
+/* #region Grid */
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr, 1fr;
+  border-spacing: 10px;
+  width: 175px;
+  height: 90%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  vertical-align: center;
+  border: 4px solid rgb(255, 255, 255);
+}
+/* #endregion */
+
 /* Modified Style for the 'Clear All' button */
 .five {
   border-radius: 5px;
@@ -120,26 +148,15 @@ input:checked + .slider {
   font-family: 'Bentham';
   font-size: 20px;
 }
+/* #endregion */
 
-/* add template to filter buttons */
-.grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr, 2fr;
-  border-spacing: 10px;
-  width: 175px;
-  height: 350px;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  vertical-align: center;
-  border: 4px solid rgb(255, 255, 255);
-}
-
+/* #region footer */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  left: -10%;
+  left: -1%;
+  right: -1%;
 }
 
 footer p {
@@ -148,4 +165,71 @@ footer p {
   white-space: nowrap;
   font-size: medium;
 }
+/* #endregion */
 
+
+/* #region store container and objects */
+.store-container {
+  height: 80%;
+  width: 90%;
+  border: 2px solid rgb(255, 255, 0);
+  left:210px;
+  right: 8%;
+  position: absolute;
+  display: grid;
+}
+
+@media (min-width: 1200px) {
+  .store-container { grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr)  }
+}
+
+
+
+/* #region store objects */
+.item-container {
+  height: 95%;
+  width: 95%;
+  border: 2px solid #fff;
+  border-radius: 2%;
+  background-color: #212121;
+}
+
+.item-img {
+  height: 66%;
+  width: 95%;
+  border: 2px solid #ff0000;
+  background-image: url('../images/minions/teddy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.item-name {
+  font-family: 'Henny Penny';
+  font-size: large;
+  color: white;
+  text-align: center
+}
+
+.item-price {
+  font-family: 'Henny Penny';
+  font-size: large;
+  color: white;
+  text-align: center;
+}
+
+.item-description {
+  font-family: 'Bentham';
+  font-size: x-small;
+  color: white;
+  text-align: left;
+  padding: 4px;
+}
+
+/* #endregion */
+
+
+/* #endregion */
