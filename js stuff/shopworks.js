@@ -10,6 +10,9 @@ $(document).ready(function() {
   if (filter) {
     $(`#${filter}`).prop('checked', true);
   }
+
+  cart = loadCart();
+
   addListeners();
   filterItems();
 })
@@ -48,12 +51,36 @@ function filterItems() {
       filteredItems.push(...shoppeItems[itemType]);
     }
   }
-  // only logging for now, not adding to page
-  // perhaps adding a sort function now, like sort by item.rating for item of filteredItems???
+  // perhaps adding a sort function here, like sort by item.rating for item of filteredItems???
   console.log(filteredItems);
+  for (shopItem of filteredItems) {
+    console.log(shopItem)
+    addItem(shopItem);
+  }
 }
 
 function clearAll() {
   // clears all currently selected filters by unchecking all inputs
   $('input:checked').prop('checked', false);
+}
+
+function addItem(item) {
+  // Adds shop item to store container
+  $('.store-container').append(`
+    <div class="item-container">
+      <div class="item-img-container">
+        <img  class='item-img' src="${item.image}" id="">
+        <img class='cart-icon' src="../images/icons/cart_icon.jpg" href="shoppingcart.html" id="item cart icon 1" title="add to cart">
+      </div>
+      <div class="item-name">${item.name}</div>
+      <div class="item-price">${item.price}</div>
+      <div class="item-description">${item.description}</div>
+    </div>
+  `);
+}
+
+function loadCart() {
+  // loads cart from session storage, returns empty string if cart not found in storage
+  cart = sessionStorage.getItem('cart');
+  return (cart ? cart : '');
 }
