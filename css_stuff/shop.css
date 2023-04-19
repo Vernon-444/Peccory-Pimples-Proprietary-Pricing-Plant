@@ -193,18 +193,42 @@ footer p {
   border: 2px solid #fff;
   border-radius: 2%;
   background-color: #212121;
+  position: relative;
 }
 
-.item-img {
-  height: 66%;
-  width: 95%;
-  border: 2px solid #ff0000;
-  background-image: url('../images/minions/teddy.jpg');
+.item-img-container {
+  height: 69%;
+  width: 93%;
+  border: 4px solid #303030;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
+  position: block;
+}
+
+.item-img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #ff0000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  position: block;
+}
+
+
+.cart-icon {
+  position: absolute;
+  height: 8%;
+  width: 12%;
+  background-color: #FFF;
+  border-radius: 5%;
+  top: 3%;
+  right: 10%;
 }
 
 .item-name {
