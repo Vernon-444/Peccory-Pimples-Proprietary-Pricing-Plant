@@ -302,6 +302,15 @@ input:checked + .slider {
   right: 2%;
 }
 
+#close-cart {
+  background-color: rgb(255, 67, 67);
+  opacity: 0.8;
+}
+
+#close-cart:hover {
+  opacity: 1;
+  background-color: red;
+}
 
 @media (min-width: 1200px) {
   .store-container { grid-template-columns: repeat(7, 1fr);
@@ -408,7 +417,8 @@ footer {
   width: 101%;
   height: 40px;
   left: -1%;
-  background-color: #212121;
+  background-color: #181818;
+  opacity: 0.9;
   text-align: center;
 }
 

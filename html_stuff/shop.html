@@ -41,10 +41,7 @@
 
       <!-- #region cart button and forms ---------------------------------------->
       <!-- cart button----------------------------------------------->
-      <!-- <button class="cart" onclick="openForm()" title="Checkout"></button> -->
-      <span class="material-symbols-outlined" onclick="openForm()" id="bag-icon">
-shopping_bag
-</span>
+      <span class="material-symbols-outlined" onclick="openForm()" id="bag-icon">shopping_bag</span>
       <div class="form-popup" id="myForm">
           <div class="row">
             <div class="col-75">
@@ -106,6 +103,7 @@ shopping_bag
                     <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                   </label> -->
                   <input type="submit" value="Continue to checkout" class="btn">
+                  <input type="button" value="Back to Shop" class="btn" onclick="closeForm()" id="close-cart">
                 </form>
               </div>
             </div>
