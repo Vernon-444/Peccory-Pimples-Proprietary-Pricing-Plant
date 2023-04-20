@@ -294,8 +294,8 @@ input:checked + .slider {
 }
 
 #bag-icon {
-  height: 8%;
-  width: 5%;
+  height: 95px;
+  width: 95px;
   font-size: 75px;
   text-align: center;
   top: 10px;
