@@ -8,7 +8,7 @@ const shoppeItems = {
       rating: "5",
       releaseDate: "1999",
       description: "Lorem Ipsum",
-      image: "",
+      image: "../images/books/comedy_gold.jpg",
     },
     {
       name: "Enchanted Book",
@@ -19,7 +19,7 @@ const shoppeItems = {
       releaseDate: "1999",
       description:
         "Lorem Ipsum something or whatever, this is made to be filler text to test the description box",
-      image: "../images/books/comedy_gold.jpg",
+      image: "../images/books/enchanted_book.jpg",
     },
     {
       name: "[REDACTED]",
@@ -30,7 +30,7 @@ const shoppeItems = {
       releaseDate: "69",
       description:
         "Lorem Ipsum something or whatever, this is made to be filler text to test the description box",
-      image: "../images/books/enchanted_book.jpg",
+      image: "../images/books/how_to_book.jpg.png",
     },
     {
       name: "Do-It-Yourself",
@@ -93,7 +93,7 @@ const shoppeItems = {
       name: 'Real "Owl"',
       type: "minion",
       price: "$9.99",
-      level: "novice",
+      level: "Novice",
       rating: "3",
       releaseDate: "2023",
       description:

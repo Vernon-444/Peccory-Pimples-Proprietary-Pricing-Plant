@@ -1,5 +1,4 @@
-// import "bootstrap";
-// ^^^ im confused by this?? its just creating an error
+//js that makes the shop function
 
 $(document).ready(function() {
   console.log(shoppeItems);
@@ -39,7 +38,7 @@ function filterItems() {
 
   // create array to store all selected items after  filter
   filteredItems = [];
-  
+
   // if all filters is empty then select all item types and add to filtereditems
   if (allFilters.length === 0) {
     for (let itemTypes of Object.values(shoppeItems)) {
@@ -77,6 +76,7 @@ function addItem(item) {
       <div class="item-name">${item.name}</div>
       <div class="item-price">${item.price}</div>
       <div class="item-description">${item.description}</div>
+      <div class="item-wiz-level">${item.level}</div>
     </div>
   `);
 }
