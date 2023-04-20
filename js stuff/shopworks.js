@@ -84,5 +84,23 @@ function addItem(item) {
 function loadCart() {
   // loads cart from session storage, returns empty string if cart not found in storage
   cart = sessionStorage.getItem('cart');
-  return (cart ? cart : '');
+  return (cart ? cart : '[]');
+}
+
+function addToCart(item) {
+  // adds item to cart
+  cart = JSON.parse(cart);
+  items.push(cart)
+  sessionStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function deleteItem(item) {
+  // deletes item from cart
+  cart = JSON.parse(cart);
+  for (cartIndex in cart) {
+    if (cart[cartIndex].name === item.name) {
+      cart.splice(cartIndex, 1);
+    }
+  }
+  sessionStorage.setItem('cart', JSON.stringify(cart));
 }
