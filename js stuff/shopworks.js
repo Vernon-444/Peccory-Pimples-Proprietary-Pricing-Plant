@@ -71,7 +71,7 @@ function addItem(item) {
     <div class="item-container">
       <div class="item-img-container">
         <img  class='item-img' src="${item.image}" id="">
-        <img class='cart-icon' src="../images/icons/cart_icon.jpg" href="shoppingcart.html" id="item cart icon 1" title="add to cart">
+        <span class="material-symbols-outlined">add_shopping_cart</span>
       </div>
       <div class="item-name">${item.name}</div>
       <div class="item-price">${item.price}</div>
